@@ -1,0 +1,141 @@
+
+.body {
+    display: grid;
+    grid-template-areas:
+        "nav nav"
+        "post post"
+        "foot foot";
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+}
+
+
+.blog-post {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 50px;
+    margin-top: 50px;
+    padding: 0 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .blog-post {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+}
+
+.right .info-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.right .info-box h5 {
+    font-size: 24px;
+}
+
+.right .info-box p {
+    font-style: italic;
+    font-size: 18px;
+    padding: 5px 0;
+    margin: 0;
+}
+
+.right .info-box img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.right p {
+    font-size: 16px;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+ul.contact {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+ul.contact i {
+    color: #fff;
+    font-size: 18px;
+    transition: all ease .5s;
+}
+
+.left article.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* align-items: flex-start; */
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+}
+
+.left article.title h2 {
+    font-size: 36px;
+    font-family: amiri;
+    margin-bottom: 10px;
+}
+
+
+@media (min-width: 768px) {
+    .left article.title h2 {
+        font-size: 50px;
+    }
+}
+
+.left article.title p {
+    font-size: 18px;
+}
+
+.left article.title p i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.left .content {
+    padding: 15px;
+}
+
+
+.left p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.left img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.left article {
+    margin-top: 20px;
+}
+
+.left article h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.left article ul,
+.left article ol {
+    margin-top: 10px;
+}
+
+.left article li {
+    font-size: 18px;
+    padding: 8px 0;
+    margin-left: 30px;
+}
